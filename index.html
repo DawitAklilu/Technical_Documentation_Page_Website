@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#For/_While_Loops">For/ While Loops</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#If/_Else_Statements">If/ Else Statements</a>
+        </li>
+        <li><a class="nav-link" href="#Math">Math</a></li>
+        <li><a class="nav-link" href="#Functions">Functions</a></li>
+        <li>
+          <a class="nav-link" href="#Numpy">Numpy</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Reference">Reference</a>
+        </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Python is a backend programming language with lots of capabilites. In this information document we will go over a couple of libraries and things in python which include: for/while loops,if/else statments, math, functions, and numpy. 
+          </p>
+
+          <p>
+            Python can be used for other things:
+          </p>
+          <ul>
+            <li>
+              Python can be used on a server to create web applications.
+            </li>
+            <li>
+              Python can be used alongside software to create workflows.
+<li>Python can connect to database systems. It can also read and modify files.</li>
+<li>Python can be used to handle big data and perform complex mathematics.</li><li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="For/_While_Loops">
+        <header>For/ While Loops</header>
+        <article>
+          <p>There are two types of loops:</p>
+
+          <ul>
+            <li>
+              For loops 
+            </li>
+            <li>While loops</li>
+            <p>You can think of loops with an example. Imagine the process of getting groceries. You get the groceries, you walk to the door and if it's closed you have to open it, then you have to place them on the kitchen counter. Finally you may have more groceries so you go back and do the process again i.e a loop. </p>
+            <p>For loops: 
+               Loops a set number of times. So think about going back 9 times to get things from the car.
+              
+            </p>
+          
+            <code>for i in range(10):
+              print(i)
+              0
+              1
+              2
+              3
+              4
+              5
+              6
+              7
+              8
+              9
+          </code>
+          <p>While Loops: Loops until condition is met or multiple conditions are met. Think about going to get things from the car until the car is empty. </p>
+          <code>x = -3
+            while x < 9:
+    print(x)
+    x += 1.5
+print("after the loop, x =",x)
+-3
+-1.5
+0.0
+1.5
+3.0
+4.5
+6.0
+7.5
+after the loop, x = 9.0
+          </code>
+          You can see here that it prints x + 1.5 until it gets to x more than 9 and stops.
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="If/_Else_Statements">
+        <header>If/ Else Statements</header>
+        <article>
+          <p>
+            If else statments are code that work with conditions. These conditions can be:
+          </p>
+<li>
+            < or <=
+            </li>
+            <li> > or >=</li>
+            <li>==</li>
+            <li>!=</li>
+          <p>
+            For example:
+          </p>
+          <code>for i in range(11):
+    # If the value is great than 5, print it
+    if i > 5:
+        print(i)
+        6
+7
+8
+9
+10
+          </code>
+          <p>Only values of i bigger than 5 printed all the way until 10.</p>
+          <p>
+            Else statement example:
+          </p>
+          <code>x=-10
+
+if x < -2:
+    print("x less than -2")
+else:
+    print("x greater than or equal to -2")
+    x less than -2
+          </code>
+          <p> You can see in this example we added and else statment to the if statement allowing another conditional statement to print if the frist wasn't true.
+        </article>
+      </section>
+      <section class="main-section" id="Math">
+        <header>Math</header>
+        <article>
+          <p>Math module has a lot of useful things like log, pi, sin etc. With help(Math) you can see everything Math includes.</p>
+    <h4> A module is usually made of a set of tools that are used for a single type of task</h4>
+          
+          <code>math.log(10)
+            2.302585092994046
+          </code>
+          <code>math.pi
+            3.141592653589793
+          </code>
+          <code>math.degrees(math.pi/2.0)
+            90.0
+          </code>
+          
+
+
+          
+        </article>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>
+          A function is a block of organized, reusable code that is used to perform a single action. Functions provide better modularity for your application and a high degree of code reusing.
+        </p>
+        
+        <code>def addition_func(a,b):
+    return a+b
+addition_func(5,5)
+10
+          </code>
+          <p> Now anytime I want to simply add two things together I can call my function and input two values I want to add. 
+      </section>
+      <section class="main-section" id="Numpy">
+        <header>Numpy</header>
+        <article>
+          <p>Numpy is defined as a way of storing a series of values for later use in a program.</p>
+          <p>It Provides
+      <ol><li>An array object of arbitrary homogeneous items</li>
+      <li>Fast mathematical operations over arrays
+      <li>Linear Algebra, Fourier Transforms, Random Number Generation</li></ol></p>
+          <p>
+            Examples...
+          </p>
+          <p>
+        
+            <code>np.arange(0,100,5)
+              array([ 0,  5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80,
+       85, 90, 95])</code><p>np.arange allowed us to print values from 0 to 100 in steps of 5</p>
+          </p>
+          <p>
+            <code> np.linspace(0.1,1,10)
+              array([0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1. ])</code>np.linspace creates an array with 10 elements, linearly (or evenly) spaced, from 0.1 to 1.0.
+          </p>
+          <code>ary_1 = np.arange(0,10)
+
+mulitiply = ary_1 * 3
+subtract = ary_1 - 7
+
+print(mulitiply)
+print(subtract)
+[ 0  3  6  9 12 15 18 21 24 27]
+[-7 -6 -5 -4 -3 -2 -1  0  1  2]</code> I can use numpy arrays here to do some nice math with lists of values. 
+        </article>
+      </section>
+      
+      
+      
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              
+              <a href="https://www.w3schools.com/python/python_intro.asp" target="_blank">Links</a> that were used in this info doc.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <p class = "madeby">Made by Dawit<p>
+    </main>
+  
+
+</body>
+<div id="vimeo-record-extension"></div>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+</html>
